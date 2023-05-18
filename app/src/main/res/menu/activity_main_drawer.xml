@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:iconTint="#AA2828"
+            android:title="Главная"
+            android:titleTextColor="#FF0000" /> <!-- Измените цвет текста здесь -->
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Информация про меня"
+            android:titleTextColor="#FF0000" /> <!-- Измените цвет текста здесь -->
+        <item
+            android:id="@+id/app_bar_switch"
+            android:icon="@drawable/sas"
+            android:title="Светлый режим"
+            android:titleTextColor="#D5D5D5"
+            app:actionLayout="@layout/switch_item"
+            app:showAsAction="always" /> <!-- Измените цвет текста здесь -->
+    </group>
+</menu>
