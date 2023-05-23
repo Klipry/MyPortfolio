@@ -13,10 +13,8 @@
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
@@ -58,15 +56,15 @@
                 app:layout_constraintTop_toTopOf="@+id/imageView5" />
 
             <LinearLayout
-                android:id="@+id/WorkExperience"
+                android:id="@+id/linearLayout2"
                 android:layout_width="150dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="@drawable/rounded_background"
+                android:background="#D9D9D9"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/InfoMy"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout"
                 app:layout_constraintTop_toBottomOf="@+id/textView5">
 
                 <TextView
@@ -99,14 +97,14 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
             <LinearLayout
-                android:id="@+id/InfoMy"
+                android:id="@+id/linearLayout"
                 android:layout_width="150dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="30dp"
-                android:background="@drawable/rounded_background"
+                android:background="#D9D9D9"
                 android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="@+id/WorkExperience"
+                app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
                 app:layout_constraintEnd_toEndOf="@+id/textView5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView5">
@@ -129,28 +127,26 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/OneOrder"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="@drawable/rounded_background"
+                android:background="#D9D9D9"
                 android:orientation="vertical"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/InfoMy">
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/textView10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="Проекты :"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
+                    android:textColor="@color/white" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -223,306 +219,6 @@
                     android:textSize="10dp"
                     app:iconTint="#FF0000"
                     app:rippleColor="#FF0000" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/TwoOrder"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/rounded_background"
-                android:orientation="vertical"
-                android:paddingStart="5dp"
-                android:paddingEnd="5dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/OneOrder">
-
-                <LinearLayout
-                    android:id="@+id/linearLayout3426"
-                    android:layout_width="370dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_background"
-                    android:orientation="vertical"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:id="@+id/map1"
-                            android:layout_width="80dp"
-                            android:layout_height="180dp"
-                            android:layout_marginStart="10dp"
-                            android:src="@drawable/map1" />
-
-                        <ImageView
-                            android:id="@+id/map2"
-                            android:layout_width="80dp"
-                            android:layout_height="180dp"
-                            android:layout_marginStart="10dp"
-                            android:src="@drawable/map2" />
-
-                        <ImageView
-                            android:id="@+id/map3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="180dp"
-                            android:layout_weight="1"
-                            android:src="@drawable/map3" />
-
-                        <ImageView
-                            android:id="@+id/map4"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:src="@drawable/map4" />
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:id="@+id/trebForm"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="Требования заказа :"
-                        android:textColor="@color/black"
-                        android:textSize="18dp" />
-
-                    <TextView
-                        android:id="@+id/InfoMap"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text=" -Приложение для навигации по Университету   КГИПУ .\n -Поиск кабинетов\n -Навигация \n -Масштабирование карты \n -информация о кабинетах"
-                        android:textColor="#000000" />
-
-                    <ImageView
-                        android:id="@+id/DrowForMap"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/arrow_down" />
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/buttonForMap"
-                        android:layout_width="200dp"
-                        android:layout_height="41dp"
-                        android:layout_gravity="center"
-                        android:background="#FF0000"
-                        android:backgroundTint="#FF0101"
-                        android:text="Подробнее о заказе"
-                        android:textColor="#FFFFFF"
-                        android:textSize="10dp"
-                        app:iconTint="#FF0000"
-                        app:rippleColor="#FF0000" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/ThreeOrder"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/rounded_background"
-                android:orientation="vertical"
-                android:paddingStart="5dp"
-                android:paddingEnd="5dp"
-                app:layout_constraintEnd_toEndOf="@+id/TwoOrder"
-                app:layout_constraintStart_toStartOf="@+id/TwoOrder"
-                app:layout_constraintTop_toBottomOf="@+id/TwoOrder">
-
-                <LinearLayout
-                    android:id="@+id/linearLayout3424"
-                    android:layout_width="370dp"
-                    android:layout_height="wrap_content"
-                    android:background="#D9D9D9"
-                    android:orientation="vertical"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:id="@+id/constr1"
-                            android:layout_width="80dp"
-                            android:layout_height="180dp"
-                            android:layout_marginStart="10dp"
-                            android:src="@drawable/constructor" />
-
-                        <ImageView
-                            android:id="@+id/constr2"
-                            android:layout_width="80dp"
-                            android:layout_height="180dp"
-                            android:layout_marginStart="10dp"
-                            android:src="@drawable/constructor2" />
-
-                        <ImageView
-                            android:id="@+id/nostr3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="180dp"
-                            android:layout_weight="1"
-                            android:src="@drawable/constructor3" />
-
-                        <ImageView
-                            android:id="@+id/constr4"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:src="@drawable/constructor4" />
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:id="@+id/trebFormConstr"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="Требования заказа :"
-                        android:textColor="@color/black"
-                        android:textSize="18dp" />
-
-                    <TextView
-                        android:id="@+id/InfoConstr"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="  -Приложение конструктор \n  -Приложение можно было адаптировать под любую компанию \n  -Была настройка приложения изображения и внешний вид через базу данных."
-                        android:textColor="#000000" />
-
-                    <ImageView
-                        android:id="@+id/DrowForConstr"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/arrow_down" />
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/ButtonForConstr"
-                        android:layout_width="200dp"
-                        android:layout_height="41dp"
-                        android:layout_gravity="center"
-                        android:background="#FF0000"
-                        android:backgroundTint="#FF0101"
-                        android:text="Подробнее о заказе"
-                        android:textColor="#FFFFFF"
-                        android:textSize="10dp"
-                        app:iconTint="#FF0000"
-                        app:rippleColor="#FF0000" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/FourOrder"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/rounded_background"
-                android:orientation="vertical"
-                android:paddingStart="5dp"
-                android:paddingEnd="5dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ThreeOrder">
-
-                <LinearLayout
-                    android:id="@+id/linearLayout3425"
-                    android:layout_width="370dp"
-                    android:layout_height="wrap_content"
-                    android:background="#D9D9D9"
-                    android:orientation="vertical"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:id="@+id/Rest1"
-                            android:layout_width="80dp"
-                            android:layout_height="180dp"
-                            android:layout_marginStart="10dp"
-                            android:src="@drawable/terazza1" />
-
-                        <ImageView
-                            android:id="@+id/Rest2"
-                            android:layout_width="80dp"
-                            android:layout_height="180dp"
-                            android:layout_marginStart="10dp"
-                            android:src="@drawable/terazza2" />
-
-                        <ImageView
-                            android:id="@+id/Rest3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="180dp"
-                            android:layout_weight="1"
-                            android:src="@drawable/terazza3" />
-
-                        <ImageView
-                            android:id="@+id/Rest4"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:src="@drawable/terazza4" />
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:id="@+id/trebFromRest"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="Требования заказа :"
-                        android:textColor="@color/black"
-                        android:textSize="18dp" />
-
-                    <TextView
-                        android:id="@+id/InfoRest"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text=" -Создать приложение с Меню ресторана. \n -Выбор доставки \n - Новости \n -История заказов \n -Регестрация по номеру телефона"
-                        android:textColor="#000000" />
-
-                    <ImageView
-                        android:id="@+id/DrowForRest"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/arrow_down" />
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/ButtonForRest"
-                        android:layout_width="200dp"
-                        android:layout_height="41dp"
-                        android:layout_gravity="center"
-                        android:background="#FF0000"
-                        android:backgroundTint="#FF0101"
-                        android:text="Подробнее о заказе"
-                        android:textColor="#FFFFFF"
-                        android:textSize="10dp"
-                        app:iconTint="#FF0000"
-                        app:rippleColor="#FF0000" />
-
-                </LinearLayout>
 
             </LinearLayout>
 
